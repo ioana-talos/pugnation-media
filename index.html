@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ioana Taloș">
+    <meta name="keywords" content="IT, startup, digital marketing, digital marketing software">
+    <meta name="description"
+        content="Elevate your brand's digital presence with Pugnation Media. At Pugnation Media, we specialize in providing comprehensive IT services centered around cutting-edge digital marketing software. Our suite of offerings is designed to optimize your digital presence, elevate brand visibility, and drive sustainable growth in the competitive online landscape.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pugnation Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 23px;
+            margin-left: 30px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #9d0027;
+        }
+
+        .carousel {
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .carousel-item img {
+            filter: blur(2.5px);
+            filter: brightness(0.5);
+        }
+
+        p {
+            font-size: 24px;
+            margin-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .my-h1 {
+            color: #9d0027;
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-caption p {
+            font-size: 23px;
+        }
+
+        .comp-img {
+            width: auto;
+            border-radius: 11%;
+            border: 3px solid #9d0027;
+            margin-bottom: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .quote {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .quote-fun {
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #9d0027;
+            margin-top: 10px;
+        }
+
+        .img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer ul {
+            padding: 0;
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        footer li {
+            padding: 7px 10px;
+        }
+
+        footer ul a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer ul a:hover {
+            color: #9d0027;
+            transition: color 0.3s;
+        }
+
+        .link {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .link:hover {
+            color: #9d0027;
+            transition: color 0.3s;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #9d0027;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            padding-top: 70px;
+        }
+
+        h3 {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-weight: bold;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .col-md-6 ul li {
+            font-size: 20px;
+            font-weight: bold;
+            color: #9d0027;
+            list-style: circle;
+            line-height: normal;
+        }
+
+        .card-img-top {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn {
+            color: white;
+            background-color: #9d0027;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #c75571;
+        }
+
+        .row {
+            margin-bottom: 80px;
+        }
+
+        .employees-name {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .employees-fun {
+            margin: 0;
+            font-size: 17px;
+            color: #9d0027;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 17px;
+        }
+
+        h4 {
+            font-size: 20;
+            color: #9d0027;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 770px) {
+            .my-h1 {
+                font-size: calc(1.375rem + 1.5vw);
+            }
+
+            .carousel-caption p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Pugnation Media's logo which is a pag's nose with capital letters p and m"
+                        width="76" height="55">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero-carousel">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="hero-carousel" class="carousel carousel-dark slide mt-navbar" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="carusel1.jpg" class="d-block w-100" alt="Man sitting at a computer multitasking">
+                    <div class="carousel-caption">
+                        <h1 class="my-h1">Pugnation Media</h1>
+                        <p>Transforming Digital Visions into Successful Stories</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="carusel2.jpg" class="d-block w-100" alt="an outstretched hand with a circle above it with an i in the middle">
+                    <div class="carousel-caption">
+                        <h1 class="my-h1">Pugnation Media</h1>
+                        <p>Crafting Excellence: Our Journey, Your Success</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="carusel3.jpg" class="d-block w-100" alt="an outstretched hand that has a wheel above it with a megaphone in the middle">
+                    <div class="carousel-caption">
+                        <h1 class="my-h1">Pugnation Media</h1>
+                        <p>Turning Digital Challenges into Success Narratives</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="carusel4.jpg" class="d-block w-100" alt="three figures of half people and a wheel behind them">
+                    <div class="carousel-caption">
+                        <h1 class="my-h1">Pugnation Media</h1>
+                        <p>Transforming Challenges into Triumphs for our Team's Journey</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="carusel5.jpg" class="d-block w-100" alt="a square with rounded corners with a telephone in the middle, a square with rounded corners with an at sign in the middle, a square with rounded corners with a letter in the middle and a hand pointing">
+                    <div class="carousel-caption">
+                        <h1 class="my-h1">Pugnation Media</h1>
+                        <p>Connecting Dreams to Reality</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container mb-3" id="aboutus">
+        <div class="row justify-content-center align-items-center">
+            <h2>About Us</h2>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="company1.jpg" alt="Black and white photo of an IT company" class="comp-img">
+                        <img src="company2.jpg" alt="Black and white photo of 3 employees" class="comp-img">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="company3.jpg" alt="Black and white photo of 2 happy women looking at a laptop"
+                            class="comp-img">
+                        <img src="company4.jpg" alt="Black and white photo of happy corporatists" class="comp-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Our Story</h3>
+                <p>At Pugnation Media, we offer more than just software; we provide a seamless fusion of technology and
+                    creativity. Our commitment is not only to optimize your digital strategies but to do so with a touch
+                    of pug-inspired charm. Join us in this tech-driven adventure where every click, every conversion,
+                    and every success story is infused with the spirited energy of Pugnation Media. Embrace the power of
+                    digital marketing software with a side of pug joy - this is our story, and we're thrilled to share
+                    it with you!</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-2">
+            <div class="col-md-6">
+                <p class="quote">"At Pugnation Media, our journey began with a simple yet powerful vision: to
+                    revolutionize the way businesses approach digital marketing."</p>
+                <p class="quote-fun">Chelutu DollarSign, Pugnation Media CEO</p>
+            </div>
+            <div class="col-md-6">
+                <img src="pug1.png" alt="a black pug" class="comp-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="services">
+        <h2>Services</h2>
+
+        <div class="row gy-3">
+            <div class="col-md-4">
+                <div class="card bg-secondary bg-opacity-50 h-100">
+                    <img src="card1.png" class="card-img-top" alt="a square with rounded corners imitating a web page and a wrench and hammer placed in x">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Build</h3>
+                        <a href="#webdevbtn" class="btn">Web Development</a>
+                        <a href="#brandingbtn" class="btn">Branding & UX/UI Design</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-secondary bg-opacity-50 h-100">
+                    <img src="card2.png" class="card-img-top" alt="growth chart">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Grow</h3>
+                        <a href="#seobtn" class="btn">Search Engine Optimization</a>
+                        <a href="#smmbtn" class="btn">Social Media Management</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-secondary bg-opacity-50 h-100">
+                    <img src="card3.png" class="card-img-top" alt="a bubble with a like sign in the middle, a bubble with a hashtag in the middle and a bubble with a heart in the middle">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Marketing</h3>
+                        <a href="#dmsbtn" class="btn">Digital Marketing Strategy</a>
+                        <a href="#emabtn" class="btn">Email Marketing Automation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-5" id="brandingbtn">
+            <div class="col-md-6">
+                <h3>Branding & UX/UI Design</h3>
+                <p>Pugnation Media Branding and UX/UI design team will ensure that your website and applications are not
+                    only visually stunning but also user-friendly and intuitive.</p>
+                <ul>
+                    <li>Logo design</li>
+                    <li>Website layouts</li>
+                    <li>User experience</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="pexels.png" alt="Pugnation Media's site on a computer" class="img">
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-5" id="seobtn">
+            <div class="col-md-6 order-1 order-md-1 order-sm-2">
+                <img src="icons.png" alt="Image with media icons" class="img">
+            </div>
+            <div class="col-md-6 order-lg-2 order-md-2 order-sm-1">
+                <h3>Search Engine Optimization (SEO)</h3>
+                <p>Optimizing your digital assets to enhance visibility on search engines. From strategic keyword
+                    placement to technical SEO enhancements, we ensure your brand ranks high, attracting organic traffic
+                    and boosting online discoverability.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-5" id="webdevbtn">
+            <div class="col-md-6">
+                <h3>Web Development</h3>
+                <p>Our Web Development services are design to bring your digital vision to life. Pugnation Media
+                    specializes in creating responsive, scalable and high-performance websites that meet the unique need
+                    of your business. We use latest technologies and best practices to ensure that your website is fast,
+                    secure and optimized for search engines.</p>
+                <ul>
+                    <li>E-commerce web development</li>
+                    <li>WordPress</li>
+                    <li>Shopify</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="startup3.png" alt="Pugnation Media's site on a computer" class="img">
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-5" id="smmbtn">
+            <div class="col-md-6 order-1 order-md-1 order-sm-2">
+                <img src="computer2.png" alt="White iPad" class="img">
+            </div>
+            <div class="col-md-6 order-lg-2 order-md-2 order-sm-1">
+                <h3>Social Media Management</h3>
+                <p>Curating and managing your social media profiles across platforms like Facebook, Instagram, Twitter,
+                    and LinkedIn. Our team crafts compelling content, engages with your audience, and executes targeted
+                    advertising campaigns to strengthen your brand's social presence.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-5" id="dmsbtn">
+            <div class="col-md-6">
+                <h3>Digital Marketing Strategy</h3>
+                <p>Crafting tailored digital marketing strategies to align with your business objectives. Our experts
+                    leverage data-driven insights to create comprehensive plans that maximize your online reach and
+                    engagement.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="programarea.png" alt="HTML code on a laptop" class="img">
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-5" id="emabtn">
+            <div class="col-md-6 order-1 order-md-1 order-sm-2">
+                <img src="email.png" alt="a hand with email icons" class="img">
+            </div>
+            <div class="col-md-6 order-lg-2 order-md-2 order-sm-1">
+                <h3>Email Marketing Automation</h3>
+                <p>Implementing automated email campaigns for targeted communication. From personalized customer
+                    journeys to abandoned cart reminders, our email marketing automation services maximize engagement
+                    and drive conversions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="team">
+        <h2>Team</h2>
+
+        <div class="row gy-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="ceobg.png" alt="a black pug" class="img">
+                <p class="employees-name">Chelutu DollarSign</p>
+                <p class="employees-fun">CEO</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="christinasniffbg.png" alt="Pug with a hoddie" class="img">
+                <p class="employees-name">Christina Sniff</p>
+                <p class="employees-fun">Content Creator</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="ionutsnoringtonbg.png" alt="A tired pug" class="img">
+                <p class="employees-name">Ionut Snorington</p>
+                <p class="employees-fun">Data Analyst</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="puffybunbg.png" alt="A pug with glasses" class="img">
+                <p class="employees-name">Puffy Bun</p>
+                <p class="employees-fun">Graphic Designer</p>
+            </div>
+        </div>
+
+        <div class="row gy-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="sirpugmanbg.png" alt="a black pug" class="img">
+                <p class="employees-name">Sir Pugman</p>
+                <p class="employees-fun">Digital Marketing Strategist</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="rapawnzelbg.png" alt="Pug in a yellow hat and a grey hoodie" class="img">
+                <p class="employees-name">Rapawnzel</p>
+                <p class="employees-fun">Email Marketing Specialist</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                <img src="lolapawbg.png" alt="Pug dressed in a denim jacket" class="img">
+                <p class="employees-name">Lola Paw</p>
+                <p class="employees-fun">Social Media Manager</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 gx-3 text-center">
+                <img src="snowpugbg.png" alt="Pug with red hat" class="img">
+                <p class="employees-name">Snow Pug</p>
+                <p class="employees-fun">SEO Specialist</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-5">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                    <h4 class="text-uppercase">Pugnation Media</h4>
+                    <p>Founded in 2023, we have been at the forefront of the digital marketing revolution, staying up
+                        to-date with the latest trends and technologies.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                    <h4 class="text-uppercase">Menu</h4>
+                    <ul class="footer-li">
+                        <li style="list-style: none;"><a href="#hero-carousel">Home</a></li>
+                        <li style="list-style: none;"><a href="#aboutus">About Us</a></li>
+                        <li style="list-style: none;"><a href="#services">Services</a></li>
+                        <li style="list-style: none;"><a href="#team">Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                    <h4 class="text-uppercase">Contact Us</h4>
+                    <a href="mailto:contact@pugmedia.com" target="_blank">
+                        <img src="emailicon.png" alt="email icon" class="contact-img">
+                    </a>
+                    <p><a class="link" href="mailto:contact@pugmedia.com" target="_blank">contact@pugnmedia.com</p></a>
+
+                    <a href="tel:000-000-000" target="_blank">
+                        <img src="phoneicon.png" alt="phone icon" class="contact-img">
+                    </a>
+                    <p><a class="link" href="tel:000-000-000" target="_blank">000-000-000</p></a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                    <h4 class="text-uppercase">Socials</h4>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="iglogo.png" alt="Instagram logo PNG" class="img">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="fblogo.png" alt="Facebook logo PNG" class="img">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="xlogo.png" alt="X/Twitter logo PNG" class="img">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="lilogo.png" alt="LinkedIn logo PNG" class="img">
+                    </a>
+                </div>
+            </div>
+            <p>Pugnation Media © 2023</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
